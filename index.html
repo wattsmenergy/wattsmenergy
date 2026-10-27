@@ -458,7 +458,7 @@
           'Additional Details: ' + (value('message') || 'None')
         ].join('\n');
         status.textContent = 'Opening your email application...';
-        window.location.href = 'mailto:info@wattsmenergy.com?subject=' + encodeURIComponent('Solar AMC Request - ' + value('customerName')) + '&body=' + encodeURIComponent(body);
+        window.location.href = 'mailto:wattsmenergy@gmail.com?subject=' + encodeURIComponent('Solar AMC Request - ' + value('customerName')) + '&body=' + encodeURIComponent(body);
       });
       document.getElementById('whatsappRequest').addEventListener('click', function () {
         if (!form.checkValidity()) { form.reportValidity(); status.textContent = 'Please complete all required fields.'; return; }
