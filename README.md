@@ -1,18 +1,10 @@
-# WattsM Energy Solar Proposal Portal
+# WattsM Energy Solar Portal - Indian Panel Model Edition
 
-## Run locally
-Open `index.html` directly, or serve the folder:
+## Added model references
+Verified datasheet model references are included for Waaree Ahnay Bi-55-540/545/550 and Adani ASM-M10-144-540/545/550 plus ASB-M10-144-540/545/550. Vikram Solar and RenewSys product-family references are included where the public manufacturer pages identify the family and wattage range; enter the exact suffix from the ordered datasheet/ALMM record.
 
-```bash
-python3 -m http.server 8080
-```
-Then open `http://localhost:8080`.
+## Important
+ALMM applies to the exact manufacturer and model entry, not merely the brand or product family. Confirm the current official listing and exact datasheet before quotation, order, or installation.
 
-## Deploy
-Upload all files to GitHub Pages, Azure Static Web Apps, IIS, Apache, Nginx, Netlify, or any static host.
-
-## Notes
-- Excel `.xlsx` export uses SheetJS from its public CDN. If unavailable, the portal downloads CSV.
-- PDF generation uses the browser Print / Save as PDF function.
-- All calculations are preliminary. Final engineering must verify module/inverter datasheets, ampacity, derating, short-circuit protection, voltage drop, earthing, structure, DISCOM rules, subsidy eligibility, and site conditions.
-- Update company address, GSTIN, bank details, commercial terms and warranty text before issuing quotations.
+## Deployment
+Upload `index.html` to any static host. For local testing: `python3 -m http.server 8080`.
